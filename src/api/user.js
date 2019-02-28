@@ -4,9 +4,8 @@ export default {
   // 登录
   login (data) {
     return request({
-      url: '/login',
-      method: 'post',
-      data
+      url: `/login/cellphone?phone=${data.username}&password=${data.password}`,
+      method: 'get'
     })
   },
   // 获取用户信息

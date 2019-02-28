@@ -17,7 +17,7 @@
     "cordova-prepare": "vue-cli-service cordova-prepare",
     "cordova-serve-android": "vue-cli-service cordova-serve-android",
     "cordova-serve-browser": "vue-cli-service cordova-serve-browser",
-    "cordova-serve-ios": "vue-cli-service cordova-serve-ios",
+    "cordova-serve-ios": "vue-cli-service cordova-serve-ios --buildFlag='-UseModernBuildSystem=0'",
     "cordova-serve-osx": "vue-cli-service cordova-serve-osx",
     "dev": "vue-cli-service serve --project-mode dev",
     "pre": "vue-cli-service serve --project-mode pre",
