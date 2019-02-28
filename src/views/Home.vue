@@ -2,23 +2,25 @@
   <div class="home">
     <div class="home">
       <v-card>
-        <v-toolbar
-          color="#3794df"
-          dark
-          fixed
-        >
-          <v-text-field
-            append-icon="mic"
-            type="search"
-            class="mt-2"
-            v-model="value"
-            @keydown.enter="handleSearch"
-            flat
-            label="请输入客户姓名或编号"
-            prepend-inner-icon="search"
-            solo-inverted
-          ></v-text-field>
-        </v-toolbar>
+
+        <v-form @submit="handleSearch">
+          <v-toolbar
+            color="#3794df"
+            dark
+            fixed
+          >
+            <v-text-field
+              append-icon="mic"
+              type="search"
+              class="mt-2"
+              v-model="value"
+              flat
+              label="请输入客户姓名或编号"
+              prepend-inner-icon="search"
+              solo-inverted
+            ></v-text-field>
+          </v-toolbar>
+        </v-form>
         <v-list
           three-line
           style="padding-top:56px"
